@@ -8,6 +8,9 @@
         <NuxtLink to="/about">
           前往 About
         </NuxtLink>
+        <NuxtLink to="/docs">
+          前往 Docs
+        </NuxtLink>
         <NuxtLink to="/contact">
           前往 Contact
         </NuxtLink>
