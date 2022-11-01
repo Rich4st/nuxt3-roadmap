@@ -4,9 +4,12 @@
       <h1 class="text-6xl font-semibold text-yellow-400">
         大家好！我是 Ryan
       </h1>
-      <p class="my-8 text-3xl text-gray-600">
-        這裡是 /about
-      </p>
+      <BaseApplyTitle title="這裡是 /about" />
+      <LazyBaseApplyButton @handle-click="$router.push({ path: '/' })">
+        <span class="text-3xl text-gray-600">👉點我返回主页</span>
+      </LazyBaseApplyButton>
+      <DynamicComponents />
+      <LazyTheLazyComponent />
     </div>
   </div>
 </template>
