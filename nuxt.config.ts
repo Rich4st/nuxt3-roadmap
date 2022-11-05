@@ -8,5 +8,16 @@ export default defineNuxtConfig({
   typescript: {
     typeCheck: true,
   },
+  appConfig: {
+    theme: {
+      primaryColor: '#1e88e5',
+    },
+  },
+  runtimeConfig: {
+    apiSecret: '怎麼可以讓你知道呢 :P',
+    public: {
+      apiBase: '/api',
+    },
+  },
 })
 
