@@ -3,6 +3,7 @@
     <div class="flex flex-col items-center">
       <h1 class="text-6xl font-semibold text-gray-800">
         這裡是首頁
+        <Icon name="logos:react" size="72" />
       </h1>
       <div class="my-4 flex space-x-4">
         <NuxtLink to="/about">
