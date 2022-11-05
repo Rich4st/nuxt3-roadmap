@@ -1,3 +1,11 @@
+<script setup lang="ts">
+definePageMeta({
+  middleware: defineNuxtRouteMiddleware(() => {
+    console.log('[匿名中間件] 我是直接定義在頁面內的匿名中間件')
+  }),
+})
+</script>
+
 <template>
   <div class="bg-white py-24">
     <div class="flex flex-col items-center">

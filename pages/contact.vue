@@ -1,3 +1,9 @@
+<script lang="ts" setup>
+definePageMeta({
+  middleware: 'random-redirect',
+})
+</script>
+
 <template>
   <div class="bg-white py-24">
     <div class="flex flex-col items-center">
