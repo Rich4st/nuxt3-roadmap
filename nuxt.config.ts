@@ -4,7 +4,20 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     'nuxt-icon',
     '@pinia/nuxt',
+    '@nuxtjs/i18n',
   ],
+  i18n: {
+    defaultLocale: 'en',
+    langDir: 'locales',
+    locales: [
+      { code: 'en', file: 'en.json', iso: 'en-US', name: 'English' },
+      { code: 'zh', file: 'zh.json', iso: 'zh-TW', name: '繁體中文' },
+    ],
+    strategy: 'no_prefix',
+    vueI18n: {
+      legacy: false,
+    },
+  },
   typescript: {
     typeCheck: true,
   },

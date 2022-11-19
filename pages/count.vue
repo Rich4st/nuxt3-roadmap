@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { useRouter } from '@/composables/useCounter'
+import { useCounter } from '@/composables/useCounter'
 
-const { count, increment } = useRouter()
+const { count, increment } = useCounter()
 </script>
 
 <template>

@@ -1,6 +1,6 @@
 import { ref } from 'vue'
 
-export const useRouter = () => {
+export const useCounter = () => {
   const count = ref(0)
 
   const increment = () => {

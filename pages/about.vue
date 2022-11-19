@@ -3,6 +3,26 @@ definePageMeta({
   middleware: defineNuxtRouteMiddleware(() => {
     console.log('[匿名中間件] 我是直接定義在頁面內的匿名中間件')
   }),
+  title: 'About',
+})
+
+const route = useRoute()
+const title = ref('Nuxt3 Roadmap')
+const description = ref('這裡是 Nuxt 3 學習筆記 實戰部落格')
+
+useHead({
+  title,
+  titleTemplate: title => title ? `${title} - About` : 'About',
+  meta: [
+    {
+      name: 'description',
+      content: description.value,
+    },
+    {
+      name: 'og:title',
+      content: `${route.meta.title} | Nuxt3 RoadMap`,
+    },
+  ],
 })
 </script>
 
