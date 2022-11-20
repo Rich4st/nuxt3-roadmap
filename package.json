@@ -3,12 +3,14 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
+    "test:unit": "vitest --config ./vitest.config.ts",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.29.2",
+    "@nuxt/test-utils-edge": "^3.0.1-rc.0-27814436.13e4f8b",
     "@nuxtjs/i18n": "^8.0.0-beta.4",
     "@nuxtjs/tailwindcss": "^6.1.2",
     "@pinia/nuxt": "^0.4.3",
@@ -19,6 +21,7 @@
     "pinia": "^2.0.23",
     "pinia-plugin-persistedstate": "^2.3.0",
     "typescript": "^4.8.4",
+    "vitest": "^0.25.2",
     "vue-gtag-next": "^1.14.0",
     "vue-tsc": "^1.0.9",
     "vue3-google-login": "^2.0.12"
